@@ -1,0 +1,145 @@
+<style>
+    .pf-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    .pf-hero {
+        padding-top: 6.4rem;
+    }
+
+    .pf-title {
+        font-size: 6.4rem;
+        margin-bottom: 1rem;
+        line-height: 1;
+        color: #121212;
+
+    }
+
+    .pf-title-highlight {
+        color: #ff4444;
+    }
+
+    .pf-subtitle {
+        font-size: 2rem;
+        color: #333;
+        margin-bottom: 1.5rem;
+        margin-top: 2.4rem;
+        line-height: 1.5;
+    }
+
+    .pf-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .pf-btn {
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: transform 0.2s;
+        font-size: 1.6rem;
+    }
+
+    .pf-btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .pf-btn-primary {
+        background-color: #ff4444;
+        color: white;
+    }
+
+    .pf-btn-secondary {
+        background-color: transparent;
+        border: 1px solid #333;
+        color: #333;
+    }
+
+    .pf-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .pf-testimonial {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: left;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .pf-testimonial p {
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+
+    .pf-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .pf-author-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .pf-main-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .pf-team-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .pf-content {
+            grid-template-columns: 1fr;
+        }
+        
+        .pf-title {
+            font-size: 2rem;
+        }
+    }
+</style>
+
+<section class="pf-container">
+    <div class="pf-hero">
+        <h1 class="pf-title">Grow Your Business<br>Better: <span class="pf-title-highlight">Transform Your<br>Digital Presence</span></h1>
+        <p class="pf-subtitle">Grow Your Business Better: Transforming Ideas Into Digital<br>Excellence Through Expert Web Solutions</p>
+        <div class="pf-buttons">
+            <a href="#" class="pf-btn pf-btn-primary">Let's Talk</a>
+            <a href="#" class="pf-btn pf-btn-secondary">OUR PROJECTS</a>
+        </div>
+    </div>
+    
+    <div class="pf-content">
+        <div class="pf-testimonial">
+            <p>We are the best programmers we have worked with. They are experts in programming and design. We highly recommend working with them.</p>
+            <div class="pf-author">
+                <img src="/api/placeholder/50/50" alt="David Moras" class="pf-author-img">
+                <span>David Moras</span>
+            </div>
+        </div>
+        <div>
+            <img src="/api/placeholder/400/500" alt="Professional in orange shirt" class="pf-main-image">
+        </div>
+        <div>
+            <img src="/api/placeholder/400/300" alt="Team working together" class="pf-team-image">
+        </div>
+    </div>
+</section>

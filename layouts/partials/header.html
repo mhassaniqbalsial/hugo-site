@@ -1,0 +1,71 @@
+<div class="pf_header">
+    <div>
+        <div class="pf_logo">
+            <img src="/images/pf_logo.png" alt="Profituned Logo">
+        </div>
+        <!-- Menu overlay inside header -->
+        <div class="menu-overlay"></div>
+        <div class="pf_header_right">
+            <div class="pf_links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#" class="has-dropdown">Services</a>
+                <a href="#" class="has-dropdown">Price</a>
+                <a href="#" class="has-dropdown">Portfolio</a>
+                <a href="#" class="has-dropdown">Contact Us</a>
+            </div>
+            <div class="burger-menu">
+                <span class="default-icon">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.77528 7.82722H20.2139C20.5809 7.82722 20.9 7.69074 21.1712 7.41778C21.4444 7.14685 21.581 6.82806 21.581 6.46139C21.581 6.09472 21.4444 5.77185 21.1712 5.49278C20.9 5.21574 20.5809 5.07722 20.2139 5.07722H2.77528C2.40828 5.07722 2.08919 5.21574 1.81802 5.49278C1.54481 5.77185 1.4082 6.09472 1.4082 6.46139C1.4082 6.82806 1.54481 7.14685 1.81802 7.41778C2.08919 7.69074 2.40828 7.82722 2.77528 7.82722ZM2.77528 13.3272H20.2139C20.5809 13.3272 20.9 13.1907 21.1712 12.9178C21.4444 12.6469 21.581 12.3281 21.581 11.9614C21.581 11.5947 21.4444 11.2719 21.1712 10.9928C20.9 10.7157 20.5809 10.5772 20.2139 10.5772H2.77528C2.40828 10.5772 2.08919 10.7157 1.81802 10.9928C1.54481 11.2719 1.4082 11.5947 1.4082 11.9614C1.4082 12.3281 1.54481 12.6469 1.81802 12.9178C2.08919 13.1907 2.40828 13.3272 2.77528 13.3272ZM2.77528 18.8272H20.2139C20.5809 18.8272 20.9 18.6907 21.1712 18.4178C21.4444 18.1469 21.581 17.8281 21.581 17.4614C21.581 17.0947 21.4444 16.7719 21.1712 16.4928C20.9 16.2157 20.5809 16.0772 20.2139 16.0772H2.77528C2.40828 16.0772 2.08919 16.2157 1.81802 16.4928C1.54481 16.7719 1.4082 17.0947 1.4082 17.4614C1.4082 17.8281 1.54481 18.1469 1.81802 18.4178C2.08919 18.6907 2.40828 18.8272 2.77528 18.8272Z"
+                            fill="#F9F9F9" />
+                    </svg>
+                </span>
+                <span class="active-icon">
+                    <!-- Your alternative SVG code here -->
+                    <svg fill="#ffffff" width="23" height="23" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M18.8,16l5.5-5.5c0.8-0.8,0.8-2,0-2.8l0,0C24,7.3,23.5,7,23,7c-0.5,0-1,0.2-1.4,0.6L16,13.2l-5.5-5.5 c-0.8-0.8-2.1-0.8-2.8,0C7.3,8,7,8.5,7,9.1s0.2,1,0.6,1.4l5.5,5.5l-5.5,5.5C7.3,21.9,7,22.4,7,23c0,0.5,0.2,1,0.6,1.4 C8,24.8,8.5,25,9,25c0.5,0,1-0.2,1.4-0.6l5.5-5.5l5.5,5.5c0.8,0.8,2.1,0.8,2.8,0c0.8-0.8,0.8-2.1,0-2.8L18.8,16z">
+                            </path>
+                        </g>
+                    </svg>
+                </span>
+
+            </div>
+            <div class="pf_cta">
+                <a href="#">Let's Talk<span><svg width="16" height="13" viewBox="0 0 16 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0621 0.937775V9.40666H14.1243V2.53111L4.40653 12.2511L3.75098 11.5622L13.4376 1.87555H6.56209V0.937775H15.0621Z"
+                                fill="#F9F9F9" />
+                        </svg>
+                    </span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navLinks = document.querySelector('.pf_links');
+        const overlay = document.querySelector('.menu-overlay');
+        burgerMenu.addEventListener('click', function () {
+            burgerMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        // Close menu when clicking overlay
+        overlay.addEventListener('click', function () {
+
+            burgerMenu.classList.remove('active');
+            navLinks.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    });
+</script>
