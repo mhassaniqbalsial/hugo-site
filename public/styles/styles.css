@@ -1,10 +1,11 @@
+
 :root {
     --bg: #E7F6F5;
     --bgSoft: #1f3050;
     --text: #dee4eb;
     --textSoft: #cbd2d9;
-     
 }
+
 html {
     font-size: 62.5%; 
   }
@@ -16,9 +17,23 @@ html {
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: "Ubuntu", serif;
-
 }
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: "Ubuntu", serif;
+}  
+
+p {
+    font-family: "Poppins", serif;
+}
+ 
+/* Site-container */
+.PF-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px; 
+} 
+
 a {
     color: inherit; 
     text-decoration: none; 
@@ -77,11 +92,9 @@ a {
 /**/
 /* Header start */
 .pf_header {
-    padding-left: 6rem;
-    padding-right: 6rem;
     padding-top: 2.7rem;
     padding-bottom: 2.7rem;
-}
+} 
 
 .pf_header_right {
     display: flex;
@@ -90,24 +103,31 @@ a {
     align-items: center;
 }
 
-.pf_header > div {
-    margin: 0 auto;
-    border-radius: 8px;
+.PF-header-wrapper { 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+/* .pf_logo {
+    flex: 0 0 auto;
+} */
 
 .pf_logo {
     width: 200px;
     height: auto;
 }
 
+/* .pf_logo img {
+    height: auto;
+    width: 20rem;
+} */ 
+
 .pf_logo img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-} 
+}
 
 .pf_links {
     flex: 1;
@@ -118,20 +138,24 @@ a {
 }
 
 .pf_links a {
-    color: #333;
     text-decoration: none;
-    font-size: 1.8rem;
     position: relative;
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    text-transform: capitalize;
+    color: #121212;
 }
 
 .pf_links a.has-dropdown::after {
     content: "▾";
     position: absolute;
-    right: 0;
+    right: -25px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 0.8rem;
-    color: #666;
+    font-size: 24px;
+    color: #F94B34;
 }
 
 .pf_cta {
@@ -193,6 +217,11 @@ a {
 } */
 
 @media (max-width:1024px){
+
+    .PF-container {
+        padding: 0 20px;
+    }
+
     .pf_header {
         padding-left: 0.5rem;
         padding-right: 0.5em;
