@@ -1,0 +1,124 @@
+
+    <style>
+
+
+        .PF-team-section {
+            padding: 5rem 2rem;
+            background-color: #f8f8f8;
+            border-radius: 24px;
+            text-align: center;
+        } 
+
+        .PF-team-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+        }
+
+        .PF-team-image-container {
+            position: relative;
+            margin: 0 -0.5rem;
+            transition: transform 0.3s ease;
+            z-index: 1;
+        }
+
+        .PF-team-image-container:hover {
+            transform: translateY(-8px);
+            z-index: 2;
+        }
+
+        .PF-team-image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}  
+
+        .PF-team-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .PF-team-description {
+            font-size: 1.125rem;
+            color: #4a4a4a;
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            line-height: 1.5;
+        }
+
+        .PF-team-button {
+            display: inline-block;
+            padding: 0.875rem 1.75rem;
+            background-color: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            border-radius: 100px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .PF-team-button:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .PF-team-section {
+                padding: 3rem 1rem;
+            }
+
+            .PF-team-title {
+                font-size: 2rem;
+            }
+
+            .PF-team-description {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .PF-team-image {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+
+    <section class="PF-team-section">
+        <div class="PF-team-images">
+            <!-- Repeat this for each team member image -->
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/abd.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/bilal.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/Iqra-Qudoos-1.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/aashir.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/tabish.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/chacha.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/sohaib.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/ali.webp" alt="Team member" class="PF-team-image">
+            </div>
+            <div class="PF-team-image-container">
+                <img src="https://hashpotato.io/wp-content/uploads/2024/08/Umair-1.webp" alt="Team member" class="PF-team-image">
+            </div> 
+        </div>
+        <h2 class="PF-team-title">Join Our Team</h2>
+        <p class="PF-team-description">We are always on the lookout for talented individuals. Checkout our job openings.</p>
+        <a href="#" class="PF-team-button">View Open Positions</a>
+    </section>
