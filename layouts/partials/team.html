@@ -1,7 +1,5 @@
 
     <style>
-
-
         .PF-team-section {
             padding: 5rem 2rem;
             background-color: #f8f8f8;
@@ -26,7 +24,6 @@
 
         .PF-team-image-container:hover {
             transform: translateY(-8px);
-            z-index: 2;
         }
 
         .PF-team-image {
@@ -66,6 +63,23 @@
             background-color: #333;
         }
 
+        .PF-team-wrapper {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #000;
+    border-radius: 32px;
+} 
+
+.PF-team-images-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+
         @media (max-width: 768px) {
             .PF-team-section {
                 padding: 3rem 1rem;
@@ -88,24 +102,26 @@
     </style>
 
     <section class="PF-team-section">
+        <div class="PF-team-wrapper">
+            <div class="PF-team-images-sub">
         <div class="PF-team-images">
             <!-- Repeat this for each team member image -->
             <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/abd.webp" alt="Team member" class="PF-team-image">
-            </div>
+                <img src="/images/m.hassan.svg" alt="team-hassan" class="PF-team-image">
+            </div>      
             <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/bilal.webp" alt="Team member" class="PF-team-image">
+                <img src="/images/sam.svg" alt="Team-sam" class="PF-team-image">
             </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/Iqra-Qudoos-1.webp" alt="Team member" class="PF-team-image">
+            <div class="PF-team-image-container"> 
+                <img src="/images/mujeeb.svg" alt="team-mujeeb" class="PF-team-image">
             </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/aashir.webp" alt="Team member" class="PF-team-image">
+            <div class="PF-team-image-container"> 
+                <img src="/images/shahbaz.svg" alt="team-shahbaz" class="PF-team-image">
             </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/tabish.webp" alt="Team member" class="PF-team-image">
+            <div class="PF-team-image-container">  
+                <img src="/images/sakhawat.svg" alt="team-sakhawar" class="PF-team-image">
             </div>
-            <div class="PF-team-image-container">
+            <div class="PF-team-image-container"> 
                 <img src="https://hashpotato.io/wp-content/uploads/2024/08/chacha.webp" alt="Team member" class="PF-team-image">
             </div>
             <div class="PF-team-image-container">
@@ -121,4 +137,6 @@
         <h2 class="PF-team-title">Join Our Team</h2>
         <p class="PF-team-description">We are always on the lookout for talented individuals. Checkout our job openings.</p>
         <a href="#" class="PF-team-button">View Open Positions</a>
+    </div>
+</div>
     </section>
