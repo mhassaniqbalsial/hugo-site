@@ -1149,6 +1149,7 @@ p.team-para {
         </div>
         
     </div>
+    </section>
 
     <style>
          
@@ -1391,42 +1392,99 @@ p.team-para {
         justify-content: center;
     }
 }
-    </style>
+    </style> 
         
     <style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
         .PF-team-section {
             padding: 5rem 2rem;
             background-color: #f8f8f8;
             border-radius: 24px;
             text-align: center;
-        } 
+        }
+
+        .PF-team-wrapper {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #000;
+            border-radius: 32px;
+        }
+
+        .PF-team-images-sub {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
         .PF-team-images {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px 0;
             margin-bottom: 2rem;
-            padding: 1rem;
+            position: relative;
         }
 
         .PF-team-image-container {
             position: relative;
-            margin: 0 -0.5rem;
-            transition: transform 0.3s ease;
+            transition: all 0.6s; 
             z-index: 1;
         }
 
+        .PF-team-image-container:not(:first-child) {
+            margin-left: -20px;
+        }
+
         .PF-team-image-container:hover {
-            transform: translateY(-8px);
+            transform: translateY(12px);
+            z-index: 9;
         }
 
         .PF-team-image {
-    width: 48px;
-    height: 48px;
-    object-fit: cover;
-}  
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            cursor: pointer;
+            filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+        }
+
+        .name {
+    position: absolute;
+    background-color: #ff4d4d;
+    color: #fff;
+    font-family: 'Bebas Neue', cursive;
+    padding: 12px 24px;
+    border-radius: 100px;
+    bottom: -80px;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: normal;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+        .name::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #ff4d4d;
+            top: 0; 
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .PF-team-image-container:hover .name {
+            opacity: 1;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+        }
 
         .PF-team-title {
             font-size: 2.5rem;
@@ -1481,41 +1539,61 @@ p.team-para {
     </style>
 
     <section class="PF-team-section">
-        <div class="PF-team-images">
-            
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/abd.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/bilal.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/Iqra-Qudoos-1.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/aashir.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/tabish.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/chacha.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/sohaib.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/ali.webp" alt="Team member" class="PF-team-image">
-            </div>
-            <div class="PF-team-image-container">
-                <img src="https://hashpotato.io/wp-content/uploads/2024/08/Umair-1.webp" alt="Team member" class="PF-team-image">
-            </div> 
-        </div>
-        <h2 class="PF-team-title">Join Our Team</h2>
-        <p class="PF-team-description">We are always on the lookout for talented individuals. Checkout our job openings.</p>
-        <a href="#" class="PF-team-button">View Open Positions</a>
-    </section>
+        <div class="PF-team-wrapper">
+            <div class="PF-team-images-sub">
+                <div class="PF-team-images">
+                    <div class="PF-team-image-container">
+                        <img src="/images/m.hassan.svg" alt="team-hassan" class="PF-team-image">
+                        <span class="name">M Hassan<br> CEO - Founder </span>
+                    </div>
 
+                    <div class="PF-team-image-container">
+                        <img src="/images/mujeeb.svg" alt="team-mujeeb" class="PF-team-image">
+                        <span class="name">Mujeeb Ur Rehman<br> Snr. Shopify Developer</span>
+                    </div>
+ 
+                    <div class="PF-team-image-container">
+                        <img src="/images/sam.svg" alt="Team-sam" class="PF-team-image">
+                        <span class="name">M Sammi Abid <br> Web Developer</span>
+                    </div>
+
+                    <div class="PF-team-image-container">
+                        <img src="/images/abdullah.png" alt="team-abey" class="PF-team-image">
+                        <span class="name">Abdullah Khalid <br> Web Developer </span>
+                    </div>
+
+                    <div class="PF-team-image-container">
+                        <img src="/images/shahbaz.svg" alt="team-shahbaz" class="PF-team-image">
+                        <span class="name">Shahbaz<br> Jnr. Web Developer</span>
+                    </div>
+
+                    <div class="PF-team-image-container">
+                        <img src="/images/sakhawat.svg" alt="team-sakhawar" class="PF-team-image">
+                        <span class="name">Sakhawat Ali<br> Project Manager</span>
+                    </div>
+
+                    <div class="PF-team-image-container">
+                        <img src="/images/allahnawaz.png" alt="team-allahnawaz" class="PF-team-image">
+                        <span class="name">Allah Nawaz<br> UI/UX Designer</span>
+                    </div> 
+ 
+                    <div class="PF-team-image-container">
+                        <img src="/images/aqib.png" alt="team-aqib" class="PF-team-image">
+                        <span class="name">Aqib Rashid<br> Jnr. Web Developer</span>
+                    </div>
+
+                    <div class="PF-team-image-container">
+                        <img src="/images/shahzaib.png" alt="team-shahzaib" class="PF-team-image">
+                        <span class="name">Shahzaib<br> Internee</span>
+                    </div>
+                </div>
+                <h2 class="PF-team-title">Join Our Team</h2>
+                <p class="PF-team-description">We are always on the lookout for talented individuals. Checkout our job openings.</p>
+                <a href="#" class="PF-team-button">View Open Positions</a>
+            </div>
+        </div>
+    </section>
+ 
         <div class="footer">
     <div class="footer-links">
 
