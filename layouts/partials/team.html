@@ -3,9 +3,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
         .PF-team-section {
-            padding: 5rem 2rem;
-            background-color: #f8f8f8;
-            border-radius: 24px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background: #f8f8f8;
             text-align: center;
         }
 
@@ -28,6 +28,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 2px; 
             padding: 20px 0;
             margin-bottom: 2rem;
             position: relative;
@@ -63,12 +64,12 @@
     font-family: 'Bebas Neue', cursive;
     padding: 12px 24px;
     border-radius: 100px;
-    bottom: -80px;
+    bottom: -70px; 
     left: 50%;
     white-space: nowrap;
     transform: translate(-50%, -50px);
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: normal;
     opacity: 0;
     transition: all 0.3s;
@@ -92,39 +93,45 @@
         }
 
         .PF-team-title {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 1rem;
+            font-size: 40px;
             line-height: 1.2;
+            font-weight: 600;
+            color: #121212;
+            padding-bottom: 1rem;
         }
 
         .PF-team-description {
-            font-size: 1.125rem;
-            color: #4a4a4a;
-            max-width: 500px;
-            margin: 0 auto 2rem;
+            font-size: 18px;
+            color: #6F7C74;
+            margin: 0; 
             line-height: 1.5;
         }
 
         .PF-team-button {
             display: inline-block;
-            padding: 0.875rem 1.75rem;
-            background-color: #1a1a1a;
-            color: white;
+            padding: 12px 20px;
+            background-color: #121212;
+            font-size: 16px;
+            color: #fff;
             text-decoration: none;
             border-radius: 100px;
             font-weight: 500;
-            transition: background-color 0.3s ease;
-        }
+        } 
 
         .PF-team-button:hover {
             background-color: #333;
         }
 
         @media (max-width: 768px) {
+            .PF-container {
+                    padding: 0 20px;
+                }
+            .PF-team-wrapper {
+            padding: 24px;
+        } 
             .PF-team-section {
-                padding: 3rem 1rem;
+                padding-top: 40px; 
+                padding-bottom: 40px;
             }
 
             .PF-team-title {
@@ -148,13 +155,15 @@
 
     <section class="PF-team-section">
         <div class="PF-container"> 
-        <div class="PF-team-wrapper">
+        <div class="PF-team-wrapper"> 
             <div class="PF-team-images-sub">
+                <h2 class="PF-team-title">Work <span class="highlight">Together</span></h2>
+                <p class="PF-team-description">Unite your team's potential with seamless collaboration tools that transform ideas into achievements, creating a workspace where creativity flows and productivity soars.</p>
                 <div class="PF-team-images">
                     <div class="PF-team-image-container">
                         <img src="/images/m.hassan.svg" alt="team-hassan" class="PF-team-image">
                         <span class="name">M Hassan<br> CEO - Founder </span>
-                    </div>
+                    </div> 
 
                     <div class="PF-team-image-container">
                         <img src="/images/mujeeb.svg" alt="team-mujeeb" class="PF-team-image">
@@ -196,8 +205,7 @@
                         <span class="name">Shahzaib<br> Internee</span>
                     </div>
                 </div>
-                <h2 class="PF-team-title">Join Our Team</h2>
-                <p class="PF-team-description">We are always on the lookout for talented individuals. Checkout our job openings.</p>
+                
                 <a href="#" class="PF-team-button">View Open Positions</a>
             </div>
         </div>
