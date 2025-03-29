@@ -1,0 +1,126 @@
+<!-- HTML -->
+<div id="about" class="PF-partners-section">
+    <div class="PF-container">
+        <div class="PF-partners-container">
+            <div class="PF-partners-title-wrapper">
+                <h2 class="PF-partners-title">Our Trusted Partners in E-commerce</h2>
+            </div>
+            <div class="PF-partners-logos-wrapper">
+                <div class="PF-partners-logo-item">
+                    <img src="/images/shopify-plus.svg" alt="Shopify Plus" class="PF-partners-logo">
+                </div>
+                <div class="PF-partners-logo-item">
+                    <img src="/images/klaviyo.svg" alt="Klaviyo" class="PF-partners-logo">
+                </div>
+                <div class="PF-partners-logo-item">
+                    <img src="/images/afterpay.svg" alt="Afterpay" class="PF-partners-logo">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+    .PF-partners-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #fff;
+    }
+
+    .PF-partners-container {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .PF-partners-title-wrapper {
+        text-align: left;
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .PF-partners-title {
+        font-size: 28px;
+        text-align: start;
+        font-weight: 600;
+        color: #121212;
+    }
+
+    .PF-partners-logos-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 60px;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 50%;
+    }
+
+    .PF-partners-logo-item {
+        display: flex;
+        width: 120px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .PF-partners-logo {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+        .PF-partners-container {
+            flex-direction: column;
+        }
+
+        .PF-partners-title-wrapper {
+            max-width: 100%;
+        }
+
+        .PF-partners-logos-wrapper {
+            max-width: 100%;
+        }
+
+        .PF-partners-section {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .PF-partners-container {
+            gap: 30px;
+        }
+
+        .PF-partners-title {
+            font-size: 28px;
+        }
+
+        .PF-partners-logos-wrapper {
+            gap: 30px;
+            justify-content: center;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        .PF-partners-section {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .PF-partners-title {
+            font-size: 24px;
+        }
+
+        .PF-partners-logos-wrapper {
+            gap: 20px;
+        }
+
+        .PF-partners-logo-item {
+            width: 80px;
+        }
+    }
+</style>
